@@ -45,7 +45,7 @@ class SongData:
         assert not self.bare.has_bgv
         assert self.bgv.has_bgv
         for field_ in ["title", "chord", "trim_length"]:
-            assert getattr(self.bare, field_) == getattr(self.bgv, field)
+            assert getattr(self.bare, field_) == getattr(self.bgv, field_)
 
     @property
     def wav_path(self):
